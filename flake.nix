@@ -21,7 +21,8 @@
           buildNodejs =
             callPackage "${nixpkgs}/pkgs/development/web/nodejs/nodejs.nix" {
               icu = icu68;
-              python = python3;
+              python = python39;
+              openssl = openssl_1_1;
             };
           v20_8_0 = (buildNodejs20 {
             enableNpm = true;
