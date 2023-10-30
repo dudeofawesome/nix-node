@@ -118,6 +118,18 @@
               python = python39;
               openssl = openssl_1_1;
             };
+          v20_9_0 = (buildNodejs20 {
+            enableNpm = true;
+            version = "20.9.0";
+            sha256 = "06a578f4h3sirjwp21dwnyak1wqhag74g79ldd15a15z1a0rcgd2";
+            patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+          });
+          v20_8_1 = (buildNodejs20 {
+            enableNpm = true;
+            version = "20.8.1";
+            sha256 = "0w5wxzvgkj9rvn9l75pyy6bmwi8cfj7kfnn7qa5bp1k3d9pwd6gp";
+            patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+          });
           v20_8_0 = (buildNodejs20 {
             enableNpm = true;
             version = "20.8.0";
@@ -188,6 +200,12 @@
             enableNpm = true;
             version = "20.0.0";
             sha256 = "1dawgfblpki21di5jv5359xq78id8z7cz1c1775x3xv8jmbyfl3l";
+            patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+          });
+          v18_18_2 = (buildNodejs18 {
+            enableNpm = true;
+            version = "18.18.2";
+            sha256 = "0miv3vqav2vcrb6bd4bjg0wbj7yk5cm4nkshk62w6gllmzqf4jbj";
             patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
           });
           v18_18_1 = (buildNodejs18 {
@@ -1055,8 +1073,10 @@
             patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
           });
         in rec {
-          "20" = v20_8_0.overrideAttrs (prev: {
+          "20" = v20_9_0.overrideAttrs (prev: {
             passthru = {
+              "9"."0" = v20_9_0;
+              "8"."1" = v20_8_1;
               "8"."0" = v20_8_0;
               "7"."0" = v20_7_0;
               "6"."1" = v20_6_1;
@@ -1071,8 +1091,9 @@
               "0"."0" = v20_0_0;
             };
           });
-          "18" = v18_18_1.overrideAttrs (prev: {
+          "18" = v18_18_2.overrideAttrs (prev: {
             passthru = {
+              "18"."2" = v18_18_2;
               "18"."1" = v18_18_1;
               "18"."0" = v18_18_0;
               "17"."1" = v18_17_1;
