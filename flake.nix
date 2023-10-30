@@ -115,7 +115,7 @@
           buildNodejs =
             callPackage "${nixpkgs}/pkgs/development/web/nodejs/nodejs.nix" {
               icu = icu68;
-              python = python39;
+              python = python38;
               openssl = openssl_1_1;
             };
           v20_9_0 = (buildNodejs20 {
