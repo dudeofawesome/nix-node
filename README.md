@@ -11,7 +11,7 @@ It's like `nvm` but for nix!
 Via the CLI
 
 ```sh
-nix registry add node 'github:andyrichardson/nix-node'
+nix registry add node 'github:fontis/nix-node'
 ```
 
 In `configuration.nix`
@@ -19,7 +19,7 @@ In `configuration.nix`
 ```nix
 nix.registry."node".to = {
   type = "github";
-  owner = "andyrichardson";
+  owner = "fontis";
   repo = "nix-node";
 };
 ```
@@ -29,13 +29,13 @@ nix.registry."node".to = {
 Via the CLI
 
 ```sh
-cachix use nix-node
+cachix use fontis
 ```
 
 In `configuration.nix`
 
 ```nix
-nix.binaryCaches = [ "https://cache.nixos.org/" "https://nix-node.cachix.org/" ]
+nix.binaryCaches = [ "https://cache.nixos.org/" "https://fontis.cachix.org/" ]
 ```
 
 ## Usage
@@ -67,4 +67,4 @@ nix-prefetch-url --type sha256 "https://nodejs.org/dist/v$version/node-v$version
 
 Update `flake.nix` with new version and checksum.
 
-Update [CI build](https://github.com/andyrichardson/nix-node/blob/master/.github/workflows/build.yml#L10) to build new version.
+Update [CI build](https://github.com/fontis/nix-node/blob/master/.github/workflows/build.yml) to build new version.
