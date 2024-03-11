@@ -202,6 +202,18 @@
             sha256 = "1dawgfblpki21di5jv5359xq78id8z7cz1c1775x3xv8jmbyfl3l";
             patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
           });
+          v18_19_1 = (buildNodejs18 {
+            enableNpm = true;
+            version = "18.19.1";
+            sha256 = "1vbds45v40mzwxdmbjvq59qf82sxr8mn8v9c71mhn26yxji9c3q9";
+            patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+          });
+          v18_19_0 = (buildNodejs18 {
+            enableNpm = true;
+            version = "18.19.0";
+            sha256 = "1dhr304y4q8khjzqni11h934aff4gs1l2lnpisyrlsjr42pl2azm";
+            patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+          });
           v18_18_2 = (buildNodejs18 {
             enableNpm = true;
             version = "18.18.2";
@@ -1091,8 +1103,10 @@
               "0"."0" = v20_0_0;
             };
           });
-          "18" = v18_18_2.overrideAttrs (prev: {
+          "18" = v18_19_1.overrideAttrs (prev: {
             passthru = {
+              "19"."1" = v18_19_1;
+              "19"."0" = v18_19_0;
               "18"."2" = v18_18_2;
               "18"."1" = v18_18_1;
               "18"."0" = v18_18_0;
