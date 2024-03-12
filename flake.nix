@@ -118,6 +118,24 @@
               python = python38;
               openssl = openssl_1_1;
             };
+          v20_11_1 = (buildNodejs20 {
+            enableNpm = true;
+            version = "20.11.1";
+            sha256 = "17i0ll63r2jkqww337jdx1g1vrp4vr1k8dfk6lnnvwgpygdkx0bp";
+            patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+          });
+          v20_11_0 = (buildNodejs20 {
+            enableNpm = true;
+            version = "20.11.0";
+            sha256 = "0h0bjpbnidlsag5h1lbdd55nliv9xmdakr352wzwajdhxsz7x01i";
+            patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+          });
+          v20_10_0 = (buildNodejs20 {
+            enableNpm = true;
+            version = "20.10.0";
+            sha256 = "0dams6x06m38ral4gb95ps7frrrbnia1wqz6fiawvjnqxdp2bsrj";
+            patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+          });
           v20_9_0 = (buildNodejs20 {
             enableNpm = true;
             version = "20.9.0";
@@ -1085,8 +1103,11 @@
             patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
           });
         in rec {
-          "20" = v20_9_0.overrideAttrs (prev: {
+          "20" = v20_11_1.overrideAttrs (prev: {
             passthru = {
+              "11"."1" = v20_11_1;
+              "11"."0" = v20_11_0;
+              "10"."0" = v20_10_0;
               "9"."0" = v20_9_0;
               "8"."1" = v20_8_1;
               "8"."0" = v20_8_0;
