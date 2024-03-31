@@ -63,9 +63,9 @@ jobs:
       - name: Set up Cachix
         uses: cachix/cachix-action@v14
         with:
-          name: fontis
+          name: '${{ vars.CACHIX_NAME }}'
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
       - name: Build ${{ matrix.version }}
         run: nix build .#${{ matrix.version }}
       - name: Publish ${{ matrix.version }}
-        run: cachix push fontis `cd -P result && pwd`
+        run: 'cachix push "${{ vars.CACHIX_NAME }}" `cd -P result && pwd`'
