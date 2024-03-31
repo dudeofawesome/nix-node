@@ -123,499 +123,499 @@
               enableNpm = true;
               version = "20.11.1";
               sha256 = "17i0ll63r2jkqww337jdx1g1vrp4vr1k8dfk6lnnvwgpygdkx0bp";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_11_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.11.0";
               sha256 = "0h0bjpbnidlsag5h1lbdd55nliv9xmdakr352wzwajdhxsz7x01i";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_10_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.10.0";
               sha256 = "0dams6x06m38ral4gb95ps7frrrbnia1wqz6fiawvjnqxdp2bsrj";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_9_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.9.0";
               sha256 = "06a578f4h3sirjwp21dwnyak1wqhag74g79ldd15a15z1a0rcgd2";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_8_1 = (buildNodejs20 {
               enableNpm = true;
               version = "20.8.1";
               sha256 = "0w5wxzvgkj9rvn9l75pyy6bmwi8cfj7kfnn7qa5bp1k3d9pwd6gp";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_8_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.8.0";
               sha256 = "0k3hf41kdj4yylcyjm730ah7mdp5dczcr8wxp8811xkdmr3yhas1";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_7_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.7.0";
               sha256 = "1siby56zq5jl7zihmpcpwpy5rcw5vxs6cncn0m41f5a6bk8drkrz";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_6_1 = (buildNodejs20 {
               enableNpm = true;
               version = "20.6.1";
               sha256 = "0avadhibwmdwcxabnfcsaai69028schr44iv6h680f5aimr5xv1s";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_6_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.6.0";
               sha256 = "1ynnlwq9v6p89p7q1qw41hwp7v8dnflkfz8dig9ihjwggax5rywy";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_5_1 = (buildNodejs20 {
               enableNpm = true;
               version = "20.5.1";
               sha256 = "14212g44jq2q912zvjv6h0jp39cij7lki9dzawb8dhiq5ym73723";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_5_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.5.0";
               sha256 = "0n70f8gn9bz33vx2qzy1j0aysqfaa8dvfycs0r7c1wfyb1lpacnb";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_4_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.4.0";
               sha256 = "0j2kxs8cxy61hd2vjxf9hynyfqh9s62xipsxkl13rdi6qmrhpg89";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_3_1 = (buildNodejs20 {
               enableNpm = true;
               version = "20.3.1";
               sha256 = "14cr7x7wzn5kw2q0369z66qqd2c4jxgildcv72s5jyb90srjva0j";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_3_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.3.0";
               sha256 = "0dbl9x2yzjbzb54gk3jnssvrrvlkcji3xfv6j1r7afpd4fad9a0v";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_2_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.2.0";
               sha256 = "12grrpplasg4vqbq92b0sk78dqn2afq6j7zz2jbmcdbc67r3sli2";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_1_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.1.0";
               sha256 = "1d9njij0d4laipcywkbqfi15dbgn319src92j55q3589hq8rw3v0";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v20_0_0 = (buildNodejs20 {
               enableNpm = true;
               version = "20.0.0";
               sha256 = "1dawgfblpki21di5jv5359xq78id8z7cz1c1775x3xv8jmbyfl3l";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_19_1 = (buildNodejs18 {
               enableNpm = true;
               version = "18.19.1";
               sha256 = "1vbds45v40mzwxdmbjvq59qf82sxr8mn8v9c71mhn26yxji9c3q9";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_19_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.19.0";
               sha256 = "1dhr304y4q8khjzqni11h934aff4gs1l2lnpisyrlsjr42pl2azm";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_18_2 = (buildNodejs18 {
               enableNpm = true;
               version = "18.18.2";
               sha256 = "0miv3vqav2vcrb6bd4bjg0wbj7yk5cm4nkshk62w6gllmzqf4jbj";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_18_1 = (buildNodejs18 {
               enableNpm = true;
               version = "18.18.1";
               sha256 = "1xl2wyd4pnkw43ry9snvs5sn0zw0xrqlyjzalmij0aqcxi3m1jf3";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_18_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.18.0";
               sha256 = "140gzrf9zm9dzfaqlbjq771r717rg3d4gnq05y4rzn9l6sndpm74";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_17_1 = (buildNodejs18 {
               enableNpm = true;
               version = "18.17.1";
               sha256 = "0np6yp6aw8h0k02dllpi2qp59h84z0cnhk371fn0f3zhs01wy5gj";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_17_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.17.0";
               sha256 = "01h4fzr0dpnhmd96hxhbb8dhyylp68j5ramrrh9w4fgaynnzmh40";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_16_1 = (buildNodejs18 {
               enableNpm = true;
               version = "18.16.1";
               sha256 = "0wp2xyz5yqcvb6949xaqpan73rfhdc3cdfsvx7vzvzc9in64yh78";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_16_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.16.0";
               sha256 = "067ijdh9073wyvqb7rlxjy8lbl08j0hg5954vnd50ni37qiimn1k";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_15_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.15.0";
               sha256 = "0dxa9mcda1jpbw721i3yx6141sm0d5j1h8sw362355zz318dci4f";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_14_2 = (buildNodejs18 {
               enableNpm = true;
               version = "18.14.2";
               sha256 = "11f6146igf088kka03iifmsw0pqihqnxncr01z6cmqpy4pfn9hzv";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_14_1 = (buildNodejs18 {
               enableNpm = true;
               version = "18.14.1";
               sha256 = "016sjdkzz0mkaiadsclfs1s6xvij1ghnni59agphmzb6h91m7hzf";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_14_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.14.0";
               sha256 = "0yi6y00aq17wkazb29zsdqlnlgh96n8rdc0a5glcimck379rvvs2";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_13_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.13.0";
               sha256 = "0s6sscynhw9limpp43f965rn9grdamcvsnd9wfb2h5qxw1icajpx";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_12_1 = (buildNodejs18 {
               enableNpm = true;
               version = "18.12.1";
               sha256 = "1prqv6bg4abapsz8njys97ahnxia2srgsb75j2i5j9n53d2hd92g";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_12_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.12.0";
               sha256 = "0bpl0klb60wnhh53xdzgxa0dajjlrnk6dmnfcdvikswr54gg19vk";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_11_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.11.0";
               sha256 = "05yfs36c8p4qx1gh32bk5lp1wq239vk0rnvrjglw2yffdzf475lb";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_10_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.10.0";
               sha256 = "17z8081bqsldx4dl7399dp9gdsmd04lgnwvwycj7sjmyw9a1nwdd";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_9_1 = (buildNodejs18 {
               enableNpm = true;
               version = "18.9.1";
               sha256 = "1nfm7n90vlg1wsr3gkadh1iijjnsqsfn522wj6csd2sn8cyrd0gk";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_9_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.9.0";
               sha256 = "0m4n9nc03jxaisk6y3rgf1ifgrxilw1dxk0aj28ng5xdzsdchp67";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_8_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.8.0";
               sha256 = "1fc67k74s62qvxgyr20hr3mr5zklsybqv2k6y4a6dpjys0jrhp9b";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_7_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.7.0";
               sha256 = "1hn3wa9k84gc0v6m8g3hgrjz9pr5map5qwg60f4vmrnzj8ya6d48";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_6_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.6.0";
               sha256 = "0k05phvlpwf467sbaxcvdzr4ncclm9fpldml8fbfrjigl4rhr2sz";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_5_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.5.0";
               sha256 = "0c50y6c52pmbxc8x1zhkzq608bwvcma4fj39cd1mvc40wfa5d2rn";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_4_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.4.0";
               sha256 = "1ddvbblp7wr1kkjws3d0lqfgb2ak1420ci8pmp4ghq83jydg3mll";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_3_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.3.0";
               sha256 = "0986ac61bkgnqvqlqpw596kcbkqks9qyg63qlp6mfl3fca0lls9z";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_2_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.2.0";
               sha256 = "0vfnr9mwqiiqdzz4sffp07pyxiwrpbwh4l2vj174fismpxgb2193";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_1_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.1.0";
               sha256 = "0zhb61ihzslmpl1g3dd6vcxjccc8gwj1v4hfphk7f3cy10hcrc78";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v18_0_0 = (buildNodejs18 {
               enableNpm = true;
               version = "18.0.0";
               sha256 = "0xffp1c8a2zbdf99jdn0fbym8wnsikkw7xczjydcc95m81jhwk9l";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_20_2 = (buildNodejs {
               enableNpm = true;
               version = "16.20.2";
               sha256 = "0jcg5k949p9khiiv6jwpr0gnb11vdgmqgd9js6l93r2mqh1ilvsp";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_20_1 = (buildNodejs {
               enableNpm = true;
               version = "16.20.1";
               sha256 = "1wdp4bnljwldnz72hamyyl97x6sxv2lsxrw8j5hsbwbiwa0k7q43";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_20_0 = (buildNodejs {
               enableNpm = true;
               version = "16.20.0";
               sha256 = "0jak6hk11kb2swyms541n3hpffn92qw2ry8izr8hmr1l4achz6g0";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_19_1 = (buildNodejs {
               enableNpm = true;
               version = "16.19.1";
               sha256 = "1dfql5jrliywv0bgwsk20mvjjyr0aqbkvpcl1jrjb08r0rj73yqp";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_19_0 = (buildNodejs {
               enableNpm = true;
               version = "16.19.0";
               sha256 = "01k72p0hp4lhlpz1syd9cbkm2gpfww0hn10xdpmzd4i3x8dfq7sg";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_18_1 = (buildNodejs {
               enableNpm = true;
               version = "16.18.1";
               sha256 = "0f2j8i6vq0v37xcfz3fc5r80m6z5h2lyfps1yij21x46iyl5300z";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_18_0 = (buildNodejs {
               enableNpm = true;
               version = "16.18.0";
               sha256 = "16y6w9c7s3ja2k0fsbbi05zggqvz2vgr86p8sdhr08hg6k96mzpw";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_17_1 = (buildNodejs {
               enableNpm = true;
               version = "16.17.1";
               sha256 = "0c53hqzlv6qv0b2jabpf16piszsspmx3kkjqng3d4mid2nsgw8b7";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_17_0 = (buildNodejs {
               enableNpm = true;
               version = "16.17.0";
               sha256 = "0iang6lqx006ki45wxd9zpscbh59bib67j8vja2nji2yd22w4a0x";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_16_0 = (buildNodejs {
               enableNpm = true;
               version = "16.16.0";
               sha256 = "1srn4zaxg332ik4r6yk8mr03ga3i4b2hjh1qffz5xamjygpm2l8l";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_15_1 = (buildNodejs {
               enableNpm = true;
               version = "16.15.1";
               sha256 = "0zcv2raa9d4g7dr7v3i2pkfrq076b085f9bmlq4i2wb93wy9vsfl";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_15_0 = (buildNodejs {
               enableNpm = true;
               version = "16.15.0";
               sha256 = "1xx4drj3rc6kin60bm84f3wnnplglih7k588r8g34y1zqkpi5y50";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_14_2 = (buildNodejs {
               enableNpm = true;
               version = "16.14.2";
               sha256 = "1lgq1yljv0nkanwhlq683irvfqy8w9hhp2iysfa5zsv8rhay48p9";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_14_1 = (buildNodejs {
               enableNpm = true;
               version = "16.14.1";
               sha256 = "0qxpjpf1v89lsfsxaq9hws23299wrs1nxqmlyapdjd11b0b7ss71";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_14_0 = (buildNodejs {
               enableNpm = true;
               version = "16.14.0";
               sha256 = "08y661799g4xmgy6f37qcm8p290q2w6gdh2rq6iah7rr7qcn9sq5";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_13_2 = (buildNodejs {
               enableNpm = true;
               version = "16.13.2";
               sha256 = "185lm13q0kwz0qimc38c7mxn8ml6m713pjdjsa9jna9az4gxxccq";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_13_1 = (buildNodejs {
               enableNpm = true;
               version = "16.13.1";
               sha256 = "1bb3rjb2xxwn6f4grjsa7m1pycp0ad7y6vz7v2d7kbsysx7h08sc";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_13_0 = (buildNodejs {
               enableNpm = true;
               version = "16.13.0";
               sha256 = "1k6bgs83s5iaawi63dcc826g23lfqr13phwbbzwx0pllqcyln49j";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_12_0 = (buildNodejs {
               enableNpm = true;
               version = "16.12.0";
               sha256 = "1b3bschfa7946jwyqp3nmbdv7ap3rl4p7h50b9bac08981m0lqjz";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_11_1 = (buildNodejs {
               enableNpm = true;
               version = "16.11.1";
               sha256 = "0y32mdv8zs35la2bny8d9rxjvj1vr8z079ji1g6ajc2yw96pyn37";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_11_0 = (buildNodejs {
               enableNpm = true;
               version = "16.11.0";
               sha256 = "1bk5f47hm409129w437h8qdvmqjdr11awblvnhkfsp911nyk3xnk";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_10_0 = (buildNodejs {
               enableNpm = true;
               version = "16.10.0";
               sha256 = "04krpy0r8msv64rcf0vy2l2yzf0a401km8p5p7h12j9b4g51mp4p";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_9_1 = (buildNodejs {
               enableNpm = true;
               version = "16.9.1";
               sha256 = "070k8i9a65r03xdchr200qixv053mim5irfvgg4pl3h57k2hxxcp";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_9_0 = (buildNodejs {
               enableNpm = true;
               version = "16.9.0";
               sha256 = "0vv6igmnz4fkr4i8gczxxw2qgcvydkpy71w3lskah8zw1lh69rqs";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_8_0 = (buildNodejs {
               enableNpm = true;
               version = "16.8.0";
               sha256 = "14k3njj382im3q4k6dhsxdk07gs81hw2k0nrixfvlw1964k04ydq";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_7_0 = (buildNodejs {
               enableNpm = true;
               version = "16.7.0";
               sha256 = "0drd7zyadjrhng9k0mspz456j3pmr7kli5dd0kx8grbqsgxzv1gs";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_6_2 = (buildNodejs {
               enableNpm = true;
               version = "16.6.2";
               sha256 = "1svrkm2zq8dyvw2l7gvgm75x2fqarkbpc33970521r3iz6hwp547";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_6_1 = (buildNodejs {
               enableNpm = true;
               version = "16.6.1";
               sha256 = "0mz5wfhf2k1qf3d57h4r8b30izhyg93g5m9c8rljlzy6ih2ymcbr";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_6_0 = (buildNodejs {
               enableNpm = true;
               version = "16.6.0";
               sha256 = "1ndrqx3k5m62r7nzl5za59m33bx10541n7xbaxxz7088ifh18msw";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_5_0 = (buildNodejs {
               enableNpm = true;
               version = "16.5.0";
               sha256 = "16dapj5pm2y1m3ldrjjlz8rq9axk85nn316iz02nk6qjs66y6drz";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_4_2 = (buildNodejs {
               enableNpm = true;
               version = "16.4.2";
               sha256 = "048x4vznpi6dai6fripg0yk21kfxm9s2mw7jb0rzisyv5aw8v2dj";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_4_1 = (buildNodejs {
               enableNpm = true;
               version = "16.4.1";
               sha256 = "1a1aygksmbafxvrs8g2jv0y1jj3cwyclk0qbqxkn5qfq5r1i943n";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_4_0 = (buildNodejs {
               enableNpm = true;
               version = "16.4.0";
               sha256 = "07f8g3hs0v7nsdvzlsr1p4pzgb04qn54pnhmbdsgmmb41cp227pr";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_3_0 = (buildNodejs {
               enableNpm = true;
               version = "16.3.0";
               sha256 = "0pxcdy9i1iyxp4afmpaz30ajlwrj74y64jl3n9rjqw0r5jw4gavs";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_2_0 = (buildNodejs {
               enableNpm = true;
               version = "16.2.0";
               sha256 = "1krm3cnpbnqg4mfl3cpp8x2i1rr6hba9qbl60wyg5f5g8ac3pyfh";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_1_0 = (buildNodejs {
               enableNpm = true;
               version = "16.1.0";
               sha256 = "0z0808mw674mshgbmhgngqfkrdix3b61f77xcdz7bwf1j87j7ad0";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v16_0_0 = (buildNodejs {
               enableNpm = true;
               version = "16.0.0";
               sha256 = "00mada0vvybizygwhzsq6gcz0m2k864lfiiqqlnw8gcc3q8r1js7";
-              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-xcodebuild.diff";
+              patches = lib.optional stdenv.isDarwin "${nixpkgs}/pkgs/development/web/nodejs/./bypass-darwin-xcrun-node16.patch";
             });
             v15_14_0 = (buildNodejs {
               enableNpm = true;
