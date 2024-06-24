@@ -15,3 +15,8 @@ extends:
   - '@code-style/eslint-config-esmodule'
 parserOptions:
   ecmaVersion: 2022
+
+rules:
+  'n/no-unsupported-features/node-builtins':
+    - 'error'
+    - ignores: ['fetch']

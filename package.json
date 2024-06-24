@@ -1,6 +1,7 @@
 {
   "name": "nix-node",
   "version": "0.0.1",
+  "private": true,
   "description": "NodeJS releases for use with nix.",
   "keywords": [
     "nix",
@@ -20,8 +21,12 @@
   "author": "Louis Orleans <louis@orleans.io>",
   "type": "module",
   "bin": {
-    "update": "dist/update.js"
+    "update-versions": "bin/update-versions.js"
   },
+  "files": [
+    "./dist/*",
+    "./bin/*"
+  ],
   "scripts": {
     "build": "concurrently --raw --group 'npm:build:*'",
     "build:js": "esbuild --tsconfig=tsconfig.build.json $(glob 'src/**/*.?(c|m)[jt]s' --ignore '**/*.@(spec|test).*') --outdir=dist --sourcemap=inline --platform=node --target=node18 --format=esm",
@@ -31,6 +36,10 @@
     "lint:types": "tsc --noEmit --pretty",
     "test": "NODE_OPTIONS=\"--experimental-vm-modules $NODE_OPTS\" jest",
     "test:debug": "NODE_OPTS='--inspect-brk' npm run test -- --runInBand"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.2",
+    "openpgp": "^5.11.2"
   },
   "devDependencies": {
     "@code-style/code-style": "^2.0.0-32",
@@ -53,9 +62,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "dependencies": {
-    "common-tags": "^1.8.2",
-    "openpgp": "^5.11.2"
   }
 }
