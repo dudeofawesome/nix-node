@@ -1,8 +1,19 @@
+# WARNING: DO NOT MODIFY THIS FILE
+# This file is auto-generated and any manual changes will be overwritten.
+# If modifications are needed, please update the generation script.
+
 { nixpkgs, pkgs, python }:
 with import ./versions.nix { inherit nixpkgs pkgs python; };
 
-v20_11_1.overrideAttrs (prev: {
+v20_15_0.overrideAttrs (prev: {
   passthru = {
+    "15"."0" = v20_15_0;
+    "14"."0" = v20_14_0;
+    "13"."1" = v20_13_1;
+    "13"."0" = v20_13_0;
+    "12"."2" = v20_12_2;
+    "12"."1" = v20_12_1;
+    "12"."0" = v20_12_0;
     "11"."1" = v20_11_1;
     "11"."0" = v20_11_0;
     "10"."0" = v20_10_0;

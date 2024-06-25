@@ -1,3 +1,7 @@
+# WARNING: DO NOT MODIFY THIS FILE
+# This file is auto-generated and any manual changes will be overwritten.
+# If modifications are needed, please update the generation script.
+
 { nixpkgs, pkgs, python }:
 with import ./versions.nix { inherit nixpkgs pkgs python; };
 

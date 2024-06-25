@@ -1,3 +1,7 @@
+# WARNING: DO NOT MODIFY THIS FILE
+# This file is auto-generated and any manual changes will be overwritten.
+# If modifications are needed, please update the generation script.
+
 { nixpkgs, python }:
 system:
 let
