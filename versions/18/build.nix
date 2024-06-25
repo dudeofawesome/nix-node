@@ -1,3 +1,4 @@
+# https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/web/nodejs/v18.nix
 { nixpkgs, pkgs, version, sha256, enableNpm ? true, ... }:
 
 let
