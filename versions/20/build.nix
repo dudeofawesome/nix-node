@@ -1,4 +1,4 @@
-{ nixpkgs, pkgs, version, sha256, enableNpm ? true }:
+{ nixpkgs, pkgs, version, sha256, enableNpm ? true, ... }:
 
 let
   buildNodejs = pkgs.callPackage "${nixpkgs}/pkgs/development/web/nodejs/nodejs.nix" {

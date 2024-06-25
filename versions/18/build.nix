@@ -1,4 +1,4 @@
-{ nixpkgs, pkgs, version, sha256, enableNpm ? true }:
+{ nixpkgs, pkgs, version, sha256, enableNpm ? true, ... }:
 
 let
   # Clang 16+ cannot build Node v18 due to -Wenum-constexpr-conversion errors.
