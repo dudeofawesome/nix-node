@@ -7,6 +7,7 @@ jobs:
     outputs:
       versions: '${{ steps.versions.outputs.versions }}'
     steps:
+      - uses: 'actions/checkout@v4'
       - name: '🎣 Pick versions to build'
         id: 'versions'
         run: |-
