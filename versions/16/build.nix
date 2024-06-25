@@ -1,5 +1,5 @@
 # https://github.com/NixOS/nixpkgs/blob/release-23.05/pkgs/development/web/nodejs/v16.nix
-{ nixpkgs, pkgs, python, version, sha256, enableNpm ? true }:
+{ nixpkgs, pkgs, nixpkgs-23_05, python, version, sha256, enableNpm ? true, ... }:
 
 let
   buildNodejs = pkgs.callPackage "${nixpkgs}/pkgs/development/web/nodejs/nodejs.nix" {
@@ -15,6 +15,6 @@ buildNodejs {
   patches = [
     "${nixpkgs}/pkgs/development/web/nodejs/disable-darwin-v8-system-instrumentation.patch"
     "${nixpkgs}/pkgs/development/web/nodejs/bypass-darwin-xcrun-node16.patch"
-    "${nixpkgs}/pkgs/development/web/nodejs/node-npm-build-npm-package-logic-node16.patch"
+    "${nixpkgs-23_05}/pkgs/development/web/nodejs/node-npm-build-npm-package-logic-node16.patch"
   ] ++ npmPatches;
 }

@@ -2,8 +2,8 @@
 # This file is auto-generated and any manual changes will be overwritten.
 # If modifications are needed, please update the generation script.
 
-{ nixpkgs, pkgs, python }:
-with import ./versions.nix { inherit nixpkgs pkgs python; };
+{ nixpkgs, pkgs, nixpkgs-23_05, pkgs-23_05, python, ... }:
+with import ./versions.nix { inherit nixpkgs pkgs nixpkgs-23_05 pkgs-23_05 python; };
 
 v20_15_0.overrideAttrs (prev: {
   passthru = {

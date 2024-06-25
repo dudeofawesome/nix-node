@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-23_05.url = "github:nixos/nixpkgs/release-23.05";
     flake-utils.url = "github:numtide/flake-utils";
     python = {
       url = "github:cachix/nixpkgs-python";
@@ -21,8 +22,8 @@
     ];
   };
 
-  outputs = { self, nixpkgs, flake-utils, python }:
+  outputs = { self, nixpkgs, nixpkgs-23_05, flake-utils, python }:
     flake-utils.lib.eachDefaultSystem (
-      import ./nodejs.nix { inherit nixpkgs python; }
+      import ./nodejs.nix { inherit nixpkgs nixpkgs-23_05 python; }
     );
 }
