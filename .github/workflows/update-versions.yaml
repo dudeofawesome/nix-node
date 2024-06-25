@@ -1,0 +1,107 @@
+name: 'Check for NodeJS releases'
+
+on:
+  schedule:
+    #        min hr day_month month day_week
+    - cron: '0   16  *         *     *'
+  push:
+    tags-ignore: ['*']
+    paths:
+      - '.github/workflows/update-versions.yaml'
+      - 'src/'
+
+permissions:
+  contents: 'write'
+  actions: 'write'
+  pull-requests: 'write'
+
+jobs:
+  check_version:
+    runs-on: 'ubuntu-latest'
+    outputs:
+      should_create_pr: '${{ steps.check.outputs.should_create_pr }}'
+      latest_version: '${{ steps.check.outputs.latest_version }}'
+      branch_name: '${{ steps.check.outputs.branch_name }}'
+    steps:
+      - name: 'Setup node 🛎️'
+        uses: 'dudeofawesome/actions/node-setup@v1'
+      - name: 'Build 🏗️'
+        run: 'npm run build'
+
+      - name: 'Check for NodeJS release 🔖'
+        id: 'check'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        run: |-
+          npx update-versions
+
+          # if the update message exists
+          if [ "$(git status --porcelain)" ]; then
+            branch_name="chore/add-node-versions-$(date +'%Y-%m-%d')"
+
+            # if the branch does not exist yet
+            if [ -z "$(git ls-remote --heads origin "refs/heads/$branch_name")" ]; then
+              echo "should_create_pr=true" >> "$GITHUB_OUTPUT"
+              echo "branch_name=$branch_name" >> "$GITHUB_OUTPUT"
+
+              echo "New NodeJS versions available." >> "$GITHUB_STEP_SUMMARY"
+
+              exit 0
+            fi
+          fi
+
+          echo "should_create_pr=false" >> "$GITHUB_OUTPUT"
+          echo "No new versions available." >> "$GITHUB_STEP_SUMMARY"
+
+  create_pr:
+    runs-on: 'ubuntu-latest'
+    needs:
+      - 'check_version'
+    if: ${{ needs.check_version.outputs.should_create_pr == 'true' }}
+    env:
+      latest_version: '${{ needs.check_version.outputs.latest_version }}'
+      branch_name: '${{ needs.check_version.outputs.branch_name }}'
+    steps:
+      - name: 'Setup node 🛎️'
+        uses: 'dudeofawesome/actions/node-setup@v1'
+      - name: 'Build 🏗️'
+        run: 'npm run build'
+      - name: 'Check for NodeJS release 🔖'
+        run: 'npx update-versions'
+      - name: 'Create branch for PR 🔀'
+        run: |-
+          git switch -C "$branch_name"
+
+      - name: 'Set git user 👤'
+        run: |-
+          git config --global user.name 'NodeJS Upgrade Bot'
+          git config --global user.email 'louis@orleans.io'
+      - name: 'Stage changes 📎'
+        run: |-
+          git add \
+            versions/ \
+            nodejs.nix \
+            ;
+          git status
+      # TODO: should we check if there are other unstaged changes (and consider that an error)
+      - name: 'Commit changes 📝'
+        run: |-
+          git commit -m "🔖 add node versions"
+      - name: 'Push changes 📤'
+        run: |-
+          git push -u origin "$branch_name"
+      - name: 'Create PR 📬'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        run: |-
+          body="$(cat << EOF
+          Add latest NodeJS versions.
+
+          Created via [Github Actions](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+          EOF
+          )"
+          gh pr create \
+            --base "${{ github.event.repository.default_branch }}" \
+            --head "$branch_name" \
+            --title "🔖 Add latest NodeJS versions" \
+            --body "$body"
