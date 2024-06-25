@@ -1,5 +1,5 @@
 import { codeBlock } from 'common-tags';
-import { SemverWithHash } from './utils.js';
+import type { SemverWithHash } from './utils.js';
 
 export const generated_warning_header = codeBlock`
   # WARNING: DO NOT MODIFY THIS FILE
