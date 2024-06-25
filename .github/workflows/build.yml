@@ -66,6 +66,10 @@ jobs:
           name: '${{ vars.CACHIX_NAME }}'
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
       - name: 'Build ${{ matrix.version }}'
-        run: 'nix build ".#${{ matrix.version }}"'
+        env:
+          version: '${{ matrix.version }}'
+        run: 'nix build --accept-flake-config ".#$version"'
       - name: 'Publish ${{ matrix.version }}'
-        run: 'cachix push "${{ vars.CACHIX_NAME }}" `cd -P result && pwd`'
+        env:
+          CACHIX_NAME: '${{ vars.CACHIX_NAME }}'
+        run: 'cachix push "$CACHIX_NAME" `cd -P result && pwd`'
