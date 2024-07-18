@@ -5,8 +5,9 @@
 { nixpkgs, pkgs, nixpkgs-23_05, pkgs-23_05, python, ... }:
 with import ./versions.nix { inherit nixpkgs pkgs nixpkgs-23_05 pkgs-23_05 python; };
 
-v20_15_0.overrideAttrs (prev: {
+v20_15_1.overrideAttrs (prev: {
   passthru = {
+    "15"."1" = v20_15_1;
     "15"."0" = v20_15_0;
     "14"."0" = v20_14_0;
     "13"."1" = v20_13_1;
