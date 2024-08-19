@@ -7,6 +7,16 @@ let
   buildNodejs = import ./build.nix;
 in
 {
+  v20_16_0 = (buildNodejs {
+    inherit nixpkgs pkgs nixpkgs-23_05 pkgs-23_05 python;
+    version = "20.16.0";
+    sha256 = "cd6c8fc3ff2606aadbc7155db6f7e77247d2d0065ac18e2f7f049095584b8b46";
+  });
+  v20_15_1 = (buildNodejs {
+    inherit nixpkgs pkgs nixpkgs-23_05 pkgs-23_05 python;
+    version = "20.15.1";
+    sha256 = "fdd53a5729d936691a2a1151046fb4897721cb8b0fca2af957823a9b40fe0c34";
+  });
   v20_15_0 = (buildNodejs {
     inherit nixpkgs pkgs nixpkgs-23_05 pkgs-23_05 python;
     version = "20.15.0";
