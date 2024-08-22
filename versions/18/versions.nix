@@ -7,6 +7,11 @@ let
   buildNodejs = import ./build.nix;
 in
 {
+  v18_20_4 = (buildNodejs {
+    inherit nixpkgs pkgs nixpkgs-23_05 pkgs-23_05 python;
+    version = "18.20.4";
+    sha256 = "a76c7ea1b96aeb6963a158806260c8094b6244d64a696529d020547b9a95ca2a";
+  });
   v18_20_3 = (buildNodejs {
     inherit nixpkgs pkgs nixpkgs-23_05 pkgs-23_05 python;
     version = "18.20.3";
