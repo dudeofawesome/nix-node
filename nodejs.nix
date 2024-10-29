@@ -25,45 +25,6 @@ in
 {
   packages =
     rec {
-      "22" = import ./versions/22/packages.nix {
-      inherit
-        nixpkgs
-        pkgs
-        nixpkgs-23_05
-        pkgs-23_05
-        python;
-    };
-      "20" = import ./versions/20/packages.nix {
-      inherit
-        nixpkgs
-        pkgs
-        nixpkgs-23_05
-        pkgs-23_05
-        python;
-    };
-      "18" = import ./versions/18/packages.nix {
-      inherit
-        nixpkgs
-        pkgs
-        nixpkgs-23_05
-        pkgs-23_05
-        python;
-    };
-      "16" = import ./versions/16/packages.nix {
-      inherit
-        nixpkgs
-        pkgs
-        nixpkgs-23_05
-        pkgs-23_05
-        python;
-    };
-      "14" = import ./versions/14/packages.nix {
-      inherit
-        nixpkgs
-        pkgs
-        nixpkgs-23_05
-        pkgs-23_05
-        python;
-    };
+      
     };
 }
